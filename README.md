@@ -2,3 +2,5 @@ This is a virtual snowglobe inspired by [this Jam](https://jams.hackclub.com/jam
 
 ![Screenshot 2024-08-31 163221](https://github.com/user-attachments/assets/5f691aa5-fdc4-4601-8b2c-be81832fe619)
 Shake your device or click on the snowglobe to start the animation. Try it [here](https://sreekar617.github.io/snowglobe/index.html)
+
+Winter 2024: Fixed things randomly disappearing when the globe is clicked, ade some changes to the animated background, added a penguin and his house, and made them shake when you click on them
