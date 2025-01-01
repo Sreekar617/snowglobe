@@ -1,4 +1,6 @@
 let globe = document.getElementById('snowglobe');
+let penguin = document.getElementById('tux');
+let house = document.getElementById('house');
 let particles;
 function calculateAcceleration(event) {
     const {x, y, z} = event.accelerationIncludingGravity;
@@ -10,6 +12,10 @@ function shakeItUp() {
     particles.play();
     globe.classList.add("shake")
     setTimeout(() => {globe.classList.remove("shake")}, 1100)
+    house.classList.add("shake_house")
+    setTimeout(() => {house.classList.remove("shake_house")}, 1100)
+    penguin.classList.add("spin")
+    setTimeout(() => {penguin.classList.remove("spin")}, 10000)
 }
 
 tsParticles.loadJSON('particles', 'particles.json')
@@ -20,6 +26,9 @@ tsParticles.loadJSON('particles', 'particles.json')
 
   // Add globe event listener
   globe.addEventListener('click', () => {
+    shakeItUp()
+  });
+  house.addEventListener('click', () => {
     shakeItUp()
   });
 

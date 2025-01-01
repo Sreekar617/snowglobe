@@ -53,8 +53,32 @@ body {
 	}
 }
 
+@keyframes spin {
+	0% { 
+		transform: rotate(0deg)  
+			translateX(-100px) rotate(0deg); 
+	} 
+
+	100% { 
+		transform: rotate(360deg)  
+			translateX(-100px) rotate(360deg); 
+	} 
+}
+
 .shake {
   animation: shake 1s;
+  z-index: 1;
+}
+
+.shake_house {
+	animation: shake 1s;
+	z-index: 12;
+}
+
+.spin {
+  animation: spin 2s;
+  animation-fill-mode: forwards;
+  z-index: 13;
 }
 
 @keyframes rotate {
